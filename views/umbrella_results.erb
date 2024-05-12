@@ -1,0 +1,28 @@
+<h1>Should I take an umbrella?</h1>
+<dl>
+
+<dt>User location</dt>
+<dd><%=@user_loc%></dd>
+
+<dt>Latitude</dt>
+<dd><%=@latitude%></dd>
+
+<dt>Longitude</dt>
+<dd><%=@longitude%></dd>
+
+<dt>Current temperature</dt>
+<dd><%=@current_temp%></dd>
+
+<dt>Current summary</dt>
+<dd><%=@current_summary%></dd>
+
+<dt>Umbrella?</dt>
+<%if @any_precipitation%>
+<dd>You might want to take an umbrella!</dd>
+<%else%>
+<dd>You probably won't need an umbrella.</dd>
+<%end%>
+
+</dl>
+
+<div><a href = "/umbrella">Go back</a></div>
