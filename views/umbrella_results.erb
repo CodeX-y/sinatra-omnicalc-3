@@ -11,13 +11,13 @@
 <dd><%=@longitude%></dd>
 
 <dt>Current temperature</dt>
-<dd><%=@current_temp%></dd>
+<dd><%=@curr_temp%></dd>
 
 <dt>Current summary</dt>
-<dd><%=@current_summary%></dd>
+<dd><%=@curr_summary%></dd>
 
 <dt>Umbrella?</dt>
-<%if @any_precipitation%>
+<%if @precipitation%>
 <dd>You might want to take an umbrella!</dd>
 <%else%>
 <dd>You probably won't need an umbrella.</dd>

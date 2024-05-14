@@ -1,0 +1,15 @@
+<%$msg_array.each do |response|%>
+<dt>user</dt>
+  <dd><%= response[:user] %>
+  <dt>assistant</dt>
+  <dd><%= response[:assistant] %>
+<% end %>
+
+<form action = "/chat" method = "post">
+<label for = "user_msg">You: </label>
+<input id = "user_input" type = "text" name = "user_msg" placeholder = "Enter a message....">
+<button>Send</button>
+</form>
+
+<p></p>
+<form action = "/chat"><button>Clear chat history</button></form>
